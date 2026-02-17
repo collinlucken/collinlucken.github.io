@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Collin Lucken</title>
+  <meta name="description" content="Curriculum Vitae of Collin Lucken, philosopher of science and AI researcher.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-brand">Collin Lucken</a>
+      <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><button class="theme-toggle" aria-label="Toggle dark mode">&#9790;</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <h1>Curriculum Vitae</h1>
+
+      <div class="cv-actions">
+        <a href="assets/Lucken_CV.pdf" class="btn btn-primary" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+        <a href="assets/Lucken_CV.pdf" class="btn btn-outline" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Open in New Tab
+        </a>
+      </div>
+
+      <p class="text-muted text-small mb-3">
+        Last updated: 2025. To request the most current version, please <a href="mailto:clucken@bowdoin.edu">email me</a>.
+      </p>
+
+      <!-- Embedded PDF -->
+      <iframe
+        class="cv-embed"
+        src="assets/Lucken_CV.pdf"
+        title="Collin Lucken — Curriculum Vitae"
+        loading="lazy"
+      >
+        <p>Your browser does not support embedded PDFs. Please <a href="assets/Lucken_CV.pdf">download the CV</a> directly.</p>
+      </iframe>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+      </div>
+      <p class="footer-content">&copy; 2025 Collin Lucken. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
