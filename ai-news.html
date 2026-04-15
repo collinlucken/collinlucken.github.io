@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI News — Collin Lucken</title>
+        <meta
+            name="description"
+            content="A critical techno-optimist digest of recent AI news — LLMs, robotics, and open-source AI."
+        />
+        <meta name="author" content="Collin Lucken" />
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="AI News — Collin Lucken" />
+        <meta
+            property="og:description"
+            content="A critical techno-optimist digest of recent AI news — LLMs, robotics, and open-source AI."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.collin-lucken.com/ai-news.html" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <style>
+            .news-intro-block {
+                margin-bottom: 2.5rem;
+            }
+
+            .news-intro-block h1 {
+                margin-bottom: 0.75rem;
+            }
+
+            .news-page-intro {
+                font-size: 0.92rem;
+                color: var(--color-text-secondary);
+                max-width: 60ch;
+                line-height: 1.75;
+                margin-bottom: 0.6rem;
+            }
+
+            .news-updated {
+                font-family: var(--font-mono);
+                font-size: 0.72rem;
+                color: var(--color-text-muted);
+            }
+
+            .news-card h3 {
+                margin-top: 0;
+            }
+
+            .news-card h3 a {
+                color: var(--color-text);
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            .news-card h3 a:hover {
+                color: var(--color-accent);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="site-header">
+            <nav class="nav-inner">
+                <a href="index.html" class="nav-brand">Collin Lucken</a>
+                <button
+                    class="nav-hamburger"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="research.html">research</a></li>
+                    <li><a href="teaching.html">teaching</a></li>
+                    <li><a href="cv.html">cv</a></li>
+                    <li><a href="ai-news.html">ai news</a></li>
+                    <li>
+                        <button
+                            class="theme-toggle"
+                            aria-label="Toggle dark mode"
+                        >
+                            &#9790;
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+
+                <div class="news-intro-block">
+                    <h1>AI News</h1>
+                    <p class="news-page-intro">
+                        AI moves faster than commentary can keep up. This page collects stories worth slowing down for — filtered for signal, not excitement — with a critical techno-optimist eye: genuinely curious about what's being built, honest about what's being oversold.
+                    </p>
+                    <p class="news-updated">Updated April 15, 2026</p>
+                </div>
+
+                <!-- ── Large Language Models ─────────────────────────────── -->
+
+                <h2>Large Language Models</h2>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Anthropic &middot; TechCrunch &middot; Apr 7, 2026</div>
+                    <h3><a href="https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/" target="_blank" rel="noopener">Anthropic debuts Claude Mythos Preview with powerful new cybersecurity capabilities</a></h3>
+                    <p>Anthropic's Claude Mythos Preview is a genuinely impressive capability leap — scoring 93.9% on SWE-bench Verified and 97.6% on USAMO 2026 — but its most striking feature is the ability to find zero-day vulnerabilities at scale across every major OS and browser. Rather than release it publicly, Anthropic is restricting access to a closed consortium through Project Glasswing, which is the right call given the risks, even if it raises real questions about who gets to wield frontier capabilities and why. The $100M in usage credits and $4M to open-source security orgs is meaningful, though it doesn't resolve the deeper tension between powerful AI and responsible access.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Anthropic / UK AISI &middot; InfoQ &middot; Apr 2026</div>
+                    <h3><a href="https://www.infoq.com/news/2026/04/anthropic-claude-mythos/" target="_blank" rel="noopener">UK AI Safety Institute independently evaluates Claude Mythos before deployment</a></h3>
+                    <p>The UK AI Safety Institute's independent evaluation of Claude Mythos Preview adds external validation to Anthropic's own cybersecurity claims, confirming exceptional offensive security capabilities while raising pointed questions about what "responsible release" actually means in practice. It's genuinely encouraging that a lab sought third-party evaluation before deployment — that's the behavior the field should normalize. But the fact that Mythos found a 27-year-old vulnerability in OpenBSD also underscores how much unpatched attack surface exists in infrastructure the world depends on daily.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">OpenAI &middot; AInvest &middot; Apr 2026</div>
+                    <h3><a href="https://www.ainvest.com/news/openai-rumored-spud-gpt-6-launch-nears-base-model-push-recast-ai-competition-2604/" target="_blank" rel="noopener">OpenAI's GPT-6 (&ldquo;Spud&rdquo;) nears launch as base-model competition intensifies</a></h3>
+                    <p>GPT-6, internally codenamed "Spud," has reportedly completed pre- and post-training and represents a claimed 40%+ performance jump over GPT-5.4 across coding, reasoning, and agentic tasks — with OpenAI claiming hallucination rates below 0.1%, a number that deserves serious independent scrutiny before anyone deploys it in legal or medical contexts. The two-tier System-1/System-2 inference framework is a meaningful architectural shift, not just a marketing slide. Whether the launch window holds or slips, the competitive pressure GPT-6 places on every other lab is already reshaping the market.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Alibaba &middot; VentureBeat &middot; Apr 2, 2026</div>
+                    <h3><a href="https://venturebeat.com/ai/alibaba-launches-open-source-qwen3-model-that-surpasses-openai-o1-and-deepseek-r1" target="_blank" rel="noopener">Alibaba's Qwen3 brings hybrid reasoning and a 1M-token context window to the frontier</a></h3>
+                    <p>Alibaba's Qwen3.6-Plus arrives with a 1-million-token context window and a hybrid reasoning architecture that blends fast and deliberate inference modes — a smart design for agentic coding workloads where both latency and depth of reasoning matter. It ships with compatibility for Claude Code and other leading dev toolchains, which signals a deliberate play for developer mindshare, not just benchmark rankings. Alibaba's pattern of releasing strong open-weight versions alongside commercial offerings is exactly the kind of behavior that keeps the broader ecosystem honest.</p>
+                </div>
+
+                <hr class="section-divider" />
+
+                <!-- ── Robotics ──────────────────────────────────────────── -->
+
+                <h2>Robotics &amp; Embodied AI</h2>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Boston Dynamics / Google DeepMind &middot; Robotics &amp; Automation News &middot; Apr 15, 2026</div>
+                    <h3><a href="https://roboticsandautomationnews.com/2026/04/15/boston-dynamics-integrates-google-deepminds-gemini-robotics-model-into-spot-inspection-platform/100585/" target="_blank" rel="noopener">Boston Dynamics integrates Gemini Robotics into Spot&rsquo;s industrial inspection platform</a></h3>
+                    <p>Live for all AIVI-Learning customers since April 8, Spot's integration of Gemini Robotics-ER 1.6 expands the robot from rigid detection rules to contextual environmental awareness — reading complex gauges, identifying dangerous debris, and reasoning about what it observes. This is one of the cleaner examples of foundation model capabilities translating into deployed industrial value, not just a staged demo. The open question is reliability at scale: autonomous hazard detection is only as valuable as the false-negative rate in production environments, which benchmarks rarely tell you.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">AGIBOT / Longcheer &middot; PR Newswire &middot; Apr 15, 2026</div>
+                    <h3><a href="https://www.prnewswire.com/news-releases/agibot-and-longcheer-technology-achieve-worlds-first-embodied-ai-deployment-in-consumer-electronics-precision-manufacturing-mass-production-line-302742853.html" target="_blank" rel="noopener">AGIBOT and Longcheer deploy embodied AI robots in a live consumer electronics production line</a></h3>
+                    <p>AGIBOT's G2 robots performing millimeter-precision loading and unloading in a live consumer electronics production line — with 140 hours of continuous operation logged — is a more significant milestone than most press releases in this space deserve, because it's a production environment, not a controlled demo. The four-month ramp from integration to deployment is fast, and AGIBOT's target of 100 robots by Q3 2026 will be a real test of whether current reliability holds under scale. China's lead in applying embodied AI to manufacturing at this pace is a strategic reality worth taking seriously.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Chery &middot; Robotics &amp; Automation News &middot; Apr 13, 2026</div>
+                    <h3><a href="https://roboticsandautomationnews.com/2026/04/13/chinese-automaker-chery-begins-selling-humanoid-robot-to-consumers-for-42000-each/100544/" target="_blank" rel="noopener">Chinese automaker Chery lists a humanoid robot on JD.com for $42,000</a></h3>
+                    <p>Chery's AiMoga Mornine M1 — 167 cm, 40 degrees of freedom, listed on JD.com at ~$41,860 — is a genuine first: a humanoid robot sold through a standard consumer retail channel by a mass-market automaker, not a startup promising future delivery. At $42K and two hours of battery life, this isn't a household appliance yet; it's a data point that the price curve on humanoid hardware is moving faster than most Western analysts predicted. The three-phase roadmap from auto dealerships to home use reflects reasonable ambition, though the utility case for consumers at this capability level remains thin.</p>
+                </div>
+
+                <hr class="section-divider" />
+
+                <!-- ── Open-Source AI ────────────────────────────────────── -->
+
+                <h2>Open-Source AI</h2>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Google &middot; Google Open Source Blog &middot; Apr 2, 2026</div>
+                    <h3><a href="https://opensource.googleblog.com/2026/03/gemma-4-expanding-the-gemmaverse-with-apache-20.html" target="_blank" rel="noopener">Gemma 4 launches under Apache 2.0 &mdash; Google&rsquo;s most open model release yet</a></h3>
+                    <p>Google's shift to Apache 2.0 for Gemma 4 removes the last major friction point for enterprises wanting to build on Google's open models commercially, and 400 million downloads across the Gemma family shows this isn't a niche developer effort. Multimodal coverage across all size tiers — including audio on edge variants — puts Gemma 4 ahead of most open alternatives on capability breadth per parameter count. Whether Google maintains this openness as Gemma models approach frontier-level performance is the longer-term question worth watching.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Z.ai &middot; NYU Shanghai &middot; Apr 7, 2026</div>
+                    <h3><a href="https://rits.shanghai.nyu.edu/ai/glm-5-1-z-ais-open-weight-model-takes-1-on-swe-bench-pro" target="_blank" rel="noopener">GLM-5.1 takes #1 on SWE-Bench Pro &mdash; trained entirely without Nvidia GPUs</a></h3>
+                    <p>Z.ai's GLM-5.1 — 744B parameters, 40B active, MIT licensed, trained on Huawei Ascend chips without a single Nvidia GPU — topping SWE-Bench Pro at 58.4 against Claude Opus 4.6's 57.3 is a meaningful data point about both open-source capability and the viability of non-Nvidia AI infrastructure. Releasing weights under MIT rather than a custom license matters: it signals genuine openness, not a marketing gesture. That said, a one-point margin on a single benchmark isn't the whole story — real-world coding agent performance across diverse tasks is the test any serious adopter should run before committing.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Alibaba &middot; VentureBeat &middot; Apr 2026</div>
+                    <h3><a href="https://venturebeat.com/ai/alibaba-launches-open-source-qwen3-model-that-surpasses-openai-o1-and-deepseek-r1" target="_blank" rel="noopener">Alibaba&rsquo;s Qwen3 open-weight release keeps pressure on closed frontier labs</a></h3>
+                    <p>Alibaba's commitment to releasing open-weight versions of Qwen3 alongside its commercial offering continues the pattern that made the Qwen line one of the most influential forces in open-source AI over the past two years. The combination of strong benchmark performance, developer-tool compatibility, and genuine permissive licensing is precisely what keeps the open-source ecosystem competitive with closed labs — and signals that Chinese AI companies see open-source as a strategic lever, not just a goodwill gesture. The real test is sustained investment in open releases as model capabilities keep climbing.</p>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="index.html">home</a>
+                    <a href="research.html">research</a>
+                    <a href="teaching.html">teaching</a>
+                    <a href="cv.html">cv</a>
+                    <a href="ai-news.html">ai news</a>
+                </div>
+                <p class="footer-content">&copy; 2025 Collin Lucken</p>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
