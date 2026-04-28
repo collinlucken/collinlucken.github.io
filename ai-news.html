@@ -3,18 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>AI News — Collin Lucken</title>
+        <title>Weekly Digest — Collin Lucken</title>
         <meta
             name="description"
-            content="A critical techno-optimist digest of recent AI news — LLMs, robotics, and open-source AI."
+            content="A weekly digest of recent work in philosophy of science, philosophy of AI, and the AI industry."
         />
         <meta name="author" content="Collin Lucken" />
 
         <!-- Open Graph -->
-        <meta property="og:title" content="AI News — Collin Lucken" />
+        <meta property="og:title" content="Weekly Digest — Collin Lucken" />
         <meta
             property="og:description"
-            content="A critical techno-optimist digest of recent AI news — LLMs, robotics, and open-source AI."
+            content="A weekly digest of recent work in philosophy of science, philosophy of AI, and the AI industry."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.collin-lucken.com/ai-news.html" />
@@ -52,6 +52,38 @@
                 color: var(--color-text-muted);
             }
 
+            .news-summary {
+                position: relative;
+                background-color: var(--color-bg-alt);
+                border-left: 3px solid var(--color-accent);
+                border-radius: 0 4px 4px 0;
+                padding: 1.4rem 1.6rem 1.4rem 1.6rem;
+                font-size: 0.95rem;
+                line-height: 1.75;
+                color: var(--color-text);
+                margin: 0 0 2.75rem 0;
+            }
+
+            .news-summary p {
+                margin: 0;
+            }
+
+            .news-summary-tag {
+                display: inline-block;
+                font-family: var(--font-mono);
+                font-size: 0.65rem;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: var(--color-accent);
+                margin-bottom: 0.7rem;
+            }
+
+            .news-empty {
+                font-style: italic;
+                color: var(--color-text-muted);
+                font-size: 0.9rem;
+            }
+
             .news-card h3 {
                 margin-top: 0;
             }
@@ -84,7 +116,7 @@
                     <li><a href="research.html">research</a></li>
                     <li><a href="teaching.html">teaching</a></li>
                     <li><a href="cv.html">cv</a></li>
-                    <li><a href="ai-news.html">ai news</a></li>
+                    <li><a href="ai-news.html">digest</a></li>
                     <li>
                         <button
                             class="theme-toggle"
@@ -101,88 +133,103 @@
             <div class="container">
 
                 <div class="news-intro-block">
-                    <h1>AI News</h1>
+                    <h1>Weekly Digest</h1>
                     <p class="news-page-intro">
-                        It can be easy to feel disconnected from the AI world in Maine, and that's both good and bad. For an AI researcher, though, that makes it hard to stay on top of the latest developments. This blog gathers them in one place for me, refreshing daily. The editorial orientation matches my own attitude to AI--call it 'critical techno optimism'. 
+                        It can be hard to track three fields at once from Maine. This page collects what mattered most each week across (1) general philosophy of science, (2) philosophy of AI, and (3) the AI industry. The summary at the top is a model-generated synthesis; the individual entries are pulled by an automated weekly refresh and lightly editorialized in a 'critical techno-optimist' register.
                     </p>
-                    <p class="news-updated">Updated April 15, 2026</p>
+                    <p class="news-updated">Updated April 28, 2026</p>
                 </div>
 
-                <!-- ── Large Language Models ─────────────────────────────── -->
+                <!-- ── This Week (model-generated synthesis) ─────────────── -->
 
-                <h2>Large Language Models</h2>
-
-                <div class="research-area news-card">
-                    <div class="research-area-label">Anthropic &middot; TechCrunch &middot; Apr 7, 2026</div>
-                    <h3><a href="https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/" target="_blank" rel="noopener">Anthropic debuts Claude Mythos Preview with powerful new cybersecurity capabilities</a></h3>
-                    <p>Anthropic's Claude Mythos Preview is a genuinely impressive capability leap — scoring 93.9% on SWE-bench Verified and 97.6% on USAMO 2026 — but its most striking feature is the ability to find zero-day vulnerabilities at scale across every major OS and browser. Rather than release it publicly, Anthropic is restricting access to a closed consortium through Project Glasswing, which is the right call given the risks, even if it raises real questions about who gets to wield frontier capabilities and why. The $100M in usage credits and $4M to open-source security orgs is meaningful, though it doesn't resolve the deeper tension between powerful AI and responsible access.</p>
+                <div class="news-summary">
+                    <span class="news-summary-tag">This week · model-generated</span>
+                    <!-- BEGIN:SUMMARY -->
+                    <p>The week was dominated by an unusually dense cluster of frontier-model announcements — Google's Deep Research and Deep Research Max agents on Gemini 3.1 Pro (Apr. 21), OpenAI's GPT-5.5 (Apr. 23), and DeepSeek V4 (Apr. 24) — that together compress what used to be a quarter's worth of capability movement into a single week and visibly narrow the gap between open weights and closed frontier. The philosophical infrastructure is responding institutionally rather than discursively: ASU and UMD are formalizing AI-and-philosophy majors, while ICLR's Trustworthy AI workshop convenes in Rio on Apr. 27 to push interpretability and robustness as design principles rather than post-hoc remedies. In mainline philosophy of science, Michela Massimi's new HOPOS preprint extends her epistemic-injustice framework to the severing of artisanal craft knowledge from mathematical physics, and John Dupré's BJPS review of Ellen Clarke's <em>The Units of Life</em> revisits biological individuation. The cross-cutting theme — what counts as legitimate knowledge, whose epistemic authority is preserved or erased as systems scale — is unusually live across all three columns this week.</p>
+                    <!-- END:SUMMARY -->
                 </div>
 
-                <div class="research-area news-card">
-                    <div class="research-area-label">Anthropic / UK AISI &middot; InfoQ &middot; Apr 2026</div>
-                    <h3><a href="https://www.infoq.com/news/2026/04/anthropic-claude-mythos/" target="_blank" rel="noopener">UK AI Safety Institute independently evaluates Claude Mythos before deployment</a></h3>
-                    <p>The UK AI Safety Institute's independent evaluation of Claude Mythos Preview adds external validation to Anthropic's own cybersecurity claims, confirming exceptional offensive security capabilities while raising pointed questions about what "responsible release" actually means in practice. It's genuinely encouraging that a lab sought third-party evaluation before deployment — that's the behavior the field should normalize. But the fact that Mythos found a 27-year-old vulnerability in OpenBSD also underscores how much unpatched attack surface exists in infrastructure the world depends on daily.</p>
-                </div>
+                <!-- ── Philosophy of Science ─────────────────────────────── -->
 
+                <h2>Philosophy of Science</h2>
+
+                <!-- BEGIN:PHILSCI -->
                 <div class="research-area news-card">
-                    <div class="research-area-label">OpenAI &middot; AInvest &middot; Apr 2026</div>
-                    <h3><a href="https://www.ainvest.com/news/openai-rumored-spud-gpt-6-launch-nears-base-model-push-recast-ai-competition-2604/" target="_blank" rel="noopener">OpenAI's GPT-6 (&ldquo;Spud&rdquo;) nears launch as base-model competition intensifies</a></h3>
-                    <p>GPT-6, internally codenamed "Spud," has reportedly completed pre- and post-training and represents a claimed 40%+ performance jump over GPT-5.4 across coding, reasoning, and agentic tasks — with OpenAI claiming hallucination rates below 0.1%, a number that deserves serious independent scrutiny before anyone deploys it in legal or medical contexts. The two-tier System-1/System-2 inference framework is a meaningful architectural shift, not just a marketing slide. Whether the launch window holds or slips, the competitive pressure GPT-6 places on every other lab is already reshaping the market.</p>
+                    <div class="research-area-label">Michela Massimi &middot; PhilSci-Archive (forthcoming, HOPOS) &middot; Apr 22, 2026</div>
+                    <h3><a href="https://philsci-archive.pitt.edu/29274/" target="_blank" rel="noopener">Knots and Knitting: On the Dangers of Epistemically Severing and Trademarking Artisanal Knowledges from Science</a></h3>
+                    <p>Massimi extends her epistemic-injustice apparatus into a historical case study of how nineteenth-century knot theory and Kelvin&rsquo;s vortex-atom hypothesis drew on weaving and knitting practices that were subsequently &ldquo;severed&rdquo; and &ldquo;trademarked&rdquo; as exclusively mathematical-physical, with the artisanal substrate gender-coded out of the official record. The argumentative move worth watching is the upgrade from descriptive history to a normative diagnosis: severing is not just bad historiography but an ongoing epistemic harm with a live structure. The paper should reward close engagement from anyone working on epistemic injustice, situated knowledge, or the foundations of physics, and it slots naturally into Massimi&rsquo;s perspectival realism program.</p>
                 </div>
 
                 <div class="research-area news-card">
-                    <div class="research-area-label">Alibaba &middot; VentureBeat &middot; Apr 2, 2026</div>
-                    <h3><a href="https://venturebeat.com/ai/alibaba-launches-open-source-qwen3-model-that-surpasses-openai-o1-and-deepseek-r1" target="_blank" rel="noopener">Alibaba's Qwen3 brings hybrid reasoning and a 1M-token context window to the frontier</a></h3>
-                    <p>Alibaba's Qwen3.6-Plus arrives with a 1-million-token context window and a hybrid reasoning architecture that blends fast and deliberate inference modes — a smart design for agentic coding workloads where both latency and depth of reasoning matter. It ships with compatibility for Claude Code and other leading dev toolchains, which signals a deliberate play for developer mindshare, not just benchmark rankings. Alibaba's pattern of releasing strong open-weight versions alongside commercial offerings is exactly the kind of behavior that keeps the broader ecosystem honest.</p>
+                    <div class="research-area-label">John Dupr&eacute; &middot; BJPS Review of Books &middot; Apr 21, 2026</div>
+                    <h3><a href="https://www.thebsps.org/reviewofbooks/dupre-on-clarke/" target="_blank" rel="noopener">Review of Ellen Clarke, <em>The Units of Life</em></a></h3>
+                    <p>Dupr&eacute; reviews Clarke&rsquo;s long-awaited monograph on biological individuality, which presses the case that organisms are countable entities only relative to a chosen functional criterion. Given Dupr&eacute;&rsquo;s own promiscuous-realism commitments the review reads less as adjudication than as a productive disagreement between two of the most developed positions on the metaphysics of organism &mdash; a useful pairing for graduate seminars and for anyone teaching the units-of-selection debate. Worth reading alongside Clarke&rsquo;s replies elsewhere in the philosophy of biology literature this year.</p>
                 </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Brian Leiter &middot; Leiter Reports &middot; Apr 23, 2026</div>
+                    <h3><a href="https://leiterreports.com/2026/04/23/lateral-moves-retirements-since-the-2024-philosophical-gourmet-report-2025-26-edition/" target="_blank" rel="noopener">Lateral moves and retirements since the 2024 Philosophical Gourmet Report</a></h3>
+                    <p>The annual sociological snapshot is more interesting than usual this cycle: notable philsci-adjacent moves include John Schwenkler (Illinois &rarr; UT Austin) and Anthony Chemero (Cincinnati &rarr; Vanderbilt), both of whom shift the centers of gravity for embodied cognition and 4E approaches. The list functions as informal evidence about which programs are actively building in HPS-adjacent areas and which are losing depth, and it&rsquo;s the closest thing the field has to a market signal independent of the next PGR cycle.</p>
+                </div>
+                <!-- END:PHILSCI -->
 
                 <hr class="section-divider" />
 
-                <!-- ── Robotics ──────────────────────────────────────────── -->
+                <!-- ── Philosophy of AI ──────────────────────────────────── -->
 
-                <h2>Robotics &amp; Embodied AI</h2>
+                <h2>Philosophy of AI</h2>
 
+                <!-- BEGIN:PHILAI -->
                 <div class="research-area news-card">
-                    <div class="research-area-label">Boston Dynamics / Google DeepMind &middot; Robotics &amp; Automation News &middot; Apr 15, 2026</div>
-                    <h3><a href="https://roboticsandautomationnews.com/2026/04/15/boston-dynamics-integrates-google-deepminds-gemini-robotics-model-into-spot-inspection-platform/100585/" target="_blank" rel="noopener">Boston Dynamics integrates Gemini Robotics into Spot&rsquo;s industrial inspection platform</a></h3>
-                    <p>Live for all AIVI-Learning customers since April 8, Spot's integration of Gemini Robotics-ER 1.6 expands the robot from rigid detection rules to contextual environmental awareness — reading complex gauges, identifying dangerous debris, and reasoning about what it observes. This is one of the cleaner examples of foundation model capabilities translating into deployed industrial value, not just a staged demo. The open question is reliability at scale: autonomous hazard detection is only as valuable as the false-negative rate in production environments, which benchmarks rarely tell you.</p>
+                    <div class="research-area-label">ICLR 2026 Workshop &middot; Rio de Janeiro &middot; Apr 27, 2026</div>
+                    <h3><a href="https://trustworthy-ai-workshop.github.io/iclr2026/" target="_blank" rel="noopener">Principled Design for Trustworthy AI: Interpretability, Robustness, and Safety across Modalities</a></h3>
+                    <p>This year&rsquo;s ICLR trustworthy-AI workshop is explicitly framed around a methodological thesis &mdash; that interpretability, uncertainty quantification, and adversarial robustness should be treated as design constraints across the full lifecycle rather than as post-hoc remedies. That framing is philosophically substantive and pushes back against the dominant industry pattern of bolt-on safety. For philosophers of science interested in how engineering disciplines articulate norms of evidence and reliability, the workshop&rsquo;s accepted papers (visible on OpenReview) are a useful corpus for studying whether &ldquo;principled&rdquo; here is doing real conceptual work or functioning as branding.</p>
                 </div>
 
                 <div class="research-area news-card">
-                    <div class="research-area-label">AGIBOT / Longcheer &middot; PR Newswire &middot; Apr 15, 2026</div>
-                    <h3><a href="https://www.prnewswire.com/news-releases/agibot-and-longcheer-technology-achieve-worlds-first-embodied-ai-deployment-in-consumer-electronics-precision-manufacturing-mass-production-line-302742853.html" target="_blank" rel="noopener">AGIBOT and Longcheer deploy embodied AI robots in a live consumer electronics production line</a></h3>
-                    <p>AGIBOT's G2 robots performing millimeter-precision loading and unloading in a live consumer electronics production line — with 140 hours of continuous operation logged — is a more significant milestone than most press releases in this space deserve, because it's a production environment, not a controlled demo. The four-month ramp from integration to deployment is fast, and AGIBOT's target of 100 robots by Q3 2026 will be a real test of whether current reliability holds under scale. China's lead in applying embodied AI to manufacturing at this pace is a strategic reality worth taking seriously.</p>
+                    <div class="research-area-label">Justin Weinberg &middot; Daily Nous &middot; Apr 27, 2026</div>
+                    <h3><a href="https://dailynous.com/2026/04/27/ai-philosophy-degree-programs/" target="_blank" rel="noopener">AI &amp; Philosophy Degree Programs</a></h3>
+                    <p>ASU is moving toward a Philosophy major with an AI track (literacy, consciousness, ethics) targeting Fall 2027, and Maryland&rsquo;s &ldquo;Human-Centered AI&rdquo; major &mdash; housed in Philosophy with multiple philosophy specializations &mdash; is in final approval for Fall 2026. This is the institutional half of a story whose intellectual half is still unresolved: whether philosophy of AI is best taught as a sub-area of philosophy of mind, as applied ethics, or as a methodologically distinct hybrid. The decisions made now about curriculum architecture will durably shape how the next cohort frames the field.</p>
                 </div>
-
-                <div class="research-area news-card">
-                    <div class="research-area-label">Chery &middot; Robotics &amp; Automation News &middot; Apr 13, 2026</div>
-                    <h3><a href="https://roboticsandautomationnews.com/2026/04/13/chinese-automaker-chery-begins-selling-humanoid-robot-to-consumers-for-42000-each/100544/" target="_blank" rel="noopener">Chinese automaker Chery lists a humanoid robot on JD.com for $42,000</a></h3>
-                    <p>Chery's AiMoga Mornine M1 — 167 cm, 40 degrees of freedom, listed on JD.com at ~$41,860 — is a genuine first: a humanoid robot sold through a standard consumer retail channel by a mass-market automaker, not a startup promising future delivery. At $42K and two hours of battery life, this isn't a household appliance yet; it's a data point that the price curve on humanoid hardware is moving faster than most Western analysts predicted. The three-phase roadmap from auto dealerships to home use reflects reasonable ambition, though the utility case for consumers at this capability level remains thin.</p>
-                </div>
+                <!-- END:PHILAI -->
 
                 <hr class="section-divider" />
 
-                <!-- ── Open-Source AI ────────────────────────────────────── -->
+                <!-- ── AI Industry ───────────────────────────────────────── -->
 
-                <h2>Open-Source AI</h2>
+                <h2>AI Industry</h2>
 
+                <!-- BEGIN:AIINDUSTRY -->
                 <div class="research-area news-card">
-                    <div class="research-area-label">Google &middot; Google Open Source Blog &middot; Apr 2, 2026</div>
-                    <h3><a href="https://opensource.googleblog.com/2026/03/gemma-4-expanding-the-gemmaverse-with-apache-20.html" target="_blank" rel="noopener">Gemma 4 launches under Apache 2.0 &mdash; Google&rsquo;s most open model release yet</a></h3>
-                    <p>Google's shift to Apache 2.0 for Gemma 4 removes the last major friction point for enterprises wanting to build on Google's open models commercially, and 400 million downloads across the Gemma family shows this isn't a niche developer effort. Multimodal coverage across all size tiers — including audio on edge variants — puts Gemma 4 ahead of most open alternatives on capability breadth per parameter count. Whether Google maintains this openness as Gemma models approach frontier-level performance is the longer-term question worth watching.</p>
+                    <div class="research-area-label">OpenAI &middot; Company blog &middot; Apr 23, 2026</div>
+                    <h3><a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">Introducing GPT-5.5</a></h3>
+                    <p>GPT-5.5 ships barely six weeks after GPT-5.4 and pushes a unified text/image/audio/video architecture, with reported gains on Terminal-Bench 2.0 (82.7%) and FrontierMath. The capability story matters less than the calibration story: OpenAI explicitly frames the model as &ldquo;less likely to proceed confidently with a bad plan&rdquo; and as recovering more gracefully from tool errors, which if true is the more philosophically interesting development &mdash; epistemic humility, not raw IQ, is the bottleneck for autonomous agents. Worth reading the system card alongside the announcement.</p>
                 </div>
 
                 <div class="research-area news-card">
-                    <div class="research-area-label">Z.ai &middot; NYU Shanghai &middot; Apr 7, 2026</div>
-                    <h3><a href="https://rits.shanghai.nyu.edu/ai/glm-5-1-z-ais-open-weight-model-takes-1-on-swe-bench-pro" target="_blank" rel="noopener">GLM-5.1 takes #1 on SWE-Bench Pro &mdash; trained entirely without Nvidia GPUs</a></h3>
-                    <p>Z.ai's GLM-5.1 — 744B parameters, 40B active, MIT licensed, trained on Huawei Ascend chips without a single Nvidia GPU — topping SWE-Bench Pro at 58.4 against Claude Opus 4.6's 57.3 is a meaningful data point about both open-source capability and the viability of non-Nvidia AI infrastructure. Releasing weights under MIT rather than a custom license matters: it signals genuine openness, not a marketing gesture. That said, a one-point margin on a single benchmark isn't the whole story — real-world coding agent performance across diverse tasks is the test any serious adopter should run before committing.</p>
+                    <div class="research-area-label">DeepSeek &middot; TechCrunch &middot; Apr 24, 2026</div>
+                    <h3><a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank" rel="noopener">DeepSeek previews V4, &lsquo;closes the gap&rsquo; with frontier models</a></h3>
+                    <p>V4 ships as Flash (284B/13B-active) and Pro (1.6T/49B-active) with a native 1M-token context window, open weights, and inference pricing roughly one-sixth of leading closed models. The benchmark deltas remain &mdash; reporting suggests a 3&ndash;6 month trail behind GPT-5.4/Gemini 3.1 Pro on knowledge tests &mdash; but the structural fact is that an open-weights model now sits inside the frontier envelope. For anyone interested in epistemic access to frontier systems for research and audit purposes, this is the most consequential release of the week.</p>
                 </div>
 
                 <div class="research-area news-card">
-                    <div class="research-area-label">Alibaba &middot; VentureBeat &middot; Apr 2026</div>
-                    <h3><a href="https://venturebeat.com/ai/alibaba-launches-open-source-qwen3-model-that-surpasses-openai-o1-and-deepseek-r1" target="_blank" rel="noopener">Alibaba&rsquo;s Qwen3 open-weight release keeps pressure on closed frontier labs</a></h3>
-                    <p>Alibaba's commitment to releasing open-weight versions of Qwen3 alongside its commercial offering continues the pattern that made the Qwen line one of the most influential forces in open-source AI over the past two years. The combination of strong benchmark performance, developer-tool compatibility, and genuine permissive licensing is precisely what keeps the open-source ecosystem competitive with closed labs — and signals that Chinese AI companies see open-source as a strategic lever, not just a goodwill gesture. The real test is sustained investment in open releases as model capabilities keep climbing.</p>
+                    <div class="research-area-label">Google &middot; The Keyword &middot; Apr 21, 2026</div>
+                    <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/" target="_blank" rel="noopener">Deep Research Max: a step change for autonomous research agents</a></h3>
+                    <p>Google launched Deep Research and Deep Research Max on Gemini 3.1 Pro, with MCP support, native chart/infographic generation, and explicit positioning of Max as a long-horizon, test-time-compute-heavy agent for asynchronous workflows. The product framing &mdash; &ldquo;due-diligence reports generated overnight&rdquo; &mdash; is honest about what these agents are now competing with: junior analysts, RAs, and (uncomfortably) early-career academic literature reviewers. Calibration of citations and source coverage will be the thing to watch in independent evaluations.</p>
                 </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Anthropic &middot; Company news &middot; Apr 27, 2026</div>
+                    <h3><a href="https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand" target="_blank" rel="noopener">Theo Hourmouzis named GM of Australia &amp; New Zealand; Sydney office opens</a></h3>
+                    <p>Anthropic&rsquo;s Sydney office &mdash; its fourth in Asia-Pacific after Tokyo, Bengaluru, and Seoul &mdash; opened this week with Hourmouzis (ex-Snowflake ANZ) leading the region. The move is interesting less as commercial expansion than as a signal about regulatory geography: Australia signed an MOU with Anthropic earlier this year, and the ANZ jurisdictions are increasingly being positioned as a comparatively predictable middle ground between the EU AI Act regime and the more permissive US settlement.</p>
+                </div>
+
+                <div class="research-area news-card">
+                    <div class="research-area-label">Tesla &middot; Q1 2026 Earnings Call &middot; Apr 22, 2026</div>
+                    <h3><a href="https://www.teslarati.com/tesla-optimus-job-listings/" target="_blank" rel="noopener">Tesla unveils ambitious Optimus humanoid roadmap</a></h3>
+                    <p>On the Q1 call, Musk reiterated that Optimus v3 will be unveiled closer to production start, and confirmed that the first-generation Fremont line is being installed for a stated 1M-units/year target with internal deployment at Fremont as the proving ground. Take the production numbers with appropriate skepticism &mdash; Tesla&rsquo;s timelines are famously elastic &mdash; but the more philosophically interesting thread is the convergence of foundation-model embodiment claims (per the Figure and Boston Dynamics pilots) with car-company-style mass-manufacturing rhetoric. The empirical question of whether humanoid form-factors actually generalize is about to get tested at scale.</p>
+                </div>
+                <!-- END:AIINDUSTRY -->
 
             </div>
         </main>
@@ -195,7 +242,7 @@
                     <a href="research.html">research</a>
                     <a href="teaching.html">teaching</a>
                     <a href="cv.html">cv</a>
-                    <a href="ai-news.html">ai news</a>
+                    <a href="ai-news.html">digest</a>
                 </div>
                 <p class="footer-content">&copy; 2025 Collin Lucken</p>
             </div>
