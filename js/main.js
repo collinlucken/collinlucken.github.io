@@ -104,10 +104,16 @@
 
   // --- Active Nav Link ---
   function initActiveNav() {
-    const path = window.location.pathname.split('/').pop() || 'index.html';
+    const pathname = window.location.pathname.replace(/\/$/, '') || '/';
+    const file = pathname.split('/').pop() || 'index.html';
+    const onColligate = pathname.indexOf('/colligate') !== -1;
+
     document.querySelectorAll('.nav-links a').forEach(function (link) {
-      const href = link.getAttribute('href');
-      if (href === path || (path === '' && href === 'index.html')) {
+      const href = link.getAttribute('href') || '';
+      const isColligateLink = href.indexOf('colligate') !== -1;
+      if (onColligate && isColligateLink) {
+        link.classList.add('active');
+      } else if (!onColligate && (href === file || (file === 'index.html' && href === 'index.html'))) {
         link.classList.add('active');
       }
     });
