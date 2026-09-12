@@ -4,10 +4,11 @@ A clean, responsive static site for [collin-lucken.com](https://www.collin-lucke
 
 Pages: home, research, teaching, [colligate](colligate/), cv.
 
-Colligate is the concept-mapping workspace. The project page is `/colligate/`; the app is the production build at `/colligate/workspace/`. To refresh the app from the [colligate](https://github.com/collinlucken/colligate) repo:
+Colligate is the concept-mapping workspace, served at `/colligate/`. To refresh it from the [colligate](https://github.com/collinlucken/colligate) repo:
 
 ```bash
 npm run build:site
-rm -rf ../collinlucken.github.io/colligate/workspace
-cp -a dist/. ../collinlucken.github.io/colligate/workspace/
+rm -rf ../collinlucken.github.io/colligate
+mkdir -p ../collinlucken.github.io/colligate
+cp -a dist/. ../collinlucken.github.io/colligate/
 ```
