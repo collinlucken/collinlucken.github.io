@@ -28,7 +28,9 @@ const mime = {
 
 function resolveUrl(raw) {
   const url = decodeURIComponent((raw || "/").split("?")[0].split("#")[0]);
-  if (url === "/colligate" || url === "/colligate/") return "/colligate.html";
+  if (url === "/colligate" || url === "/colligate/" || url === "/colligate.html") {
+    return "/colligate/index.html";
+  }
   if (url === "/") return "/index.html";
   return url;
 }
