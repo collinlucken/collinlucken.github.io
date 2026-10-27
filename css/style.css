@@ -496,6 +496,16 @@ main {
   line-height: 1.55;
 }
 
+.news-photo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-top: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+}
+
 /* --- Research Page --- */
 .research-overview {
   margin-bottom: 2.5rem;
