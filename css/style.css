@@ -962,3 +962,12 @@ main {
     text-decoration: underline;
   }
 }
+
+/* --- Research page: papers grouped by topic --- */
+.research-topic h3 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-text);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
